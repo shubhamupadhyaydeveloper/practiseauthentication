@@ -1,0 +1,22 @@
+
+<div>
+    <nav>
+        <div id="nav">
+          <h4><b>Practice</b></h4>
+          <div class="links">
+            <% if(!curruser) { %>
+            <a href="/signup">Signup</a>
+            <a href="/login">Login</a>
+            <% } %>
+            <% if(curruser) { %>
+            <a href="/logout">Logout</a>
+            <% } %>
+          </div>
+          <div class="links">
+          <a href="/">Home</a>
+          <a href="/post">Post</a>
+          </div>
+        </div>
+      </nav>
+</div>
+
